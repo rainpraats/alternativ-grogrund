@@ -1,0 +1,255 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+}
+
+#root {
+  width: 100%;
+}
+
+/* BANNER */
+
+header {
+  align-items: center;
+  background-color: #28a745;
+  display: grid;
+  grid-template-columns: 9fr auto auto;
+  padding: 1rem;
+}
+
+.displayUsername {
+  padding: 6px 16px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 1rem;
+  background-color: white;
+}
+
+.displayUsername span {
+  color: #000;
+  font-weight: 700;
+}
+
+.logoutButton {
+  height: 40px;
+  margin-right: 0.5rem;
+  background-color: #34d058;
+  color: white;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 6px 12px;
+  transition: all 0.2s ease;
+  width: auto;
+}
+
+.logoutButton:hover {
+  background-color: white;
+}
+
+/* LOGIN */
+
+.loginComponent {
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.loginForm {
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin: 200px auto;
+  padding: 2rem;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #e5e5e5;
+  box-shadow:
+    0 0.25rem 1.125rem 0.1875rem #0000000f,
+    0 0.625rem 0.875rem 0.0625rem #00000014,
+    0 0.375rem 0.375rem -0.1875rem #00000024;
+}
+
+.loginForm > div {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+.loginForm input[type='email'],
+.loginForm input[type='password'] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: text;
+}
+
+.loginButton {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #28a745;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* NAV */
+nav {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+nav > ul > li {
+  margin: 2rem;
+}
+
+nav > ul > li > a {
+  font-weight: bold;
+}
+
+/* ORDERS */
+
+.itemForm,
+.orderForm {
+  display: flex;
+  flex-flow: column;
+  gap: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.item {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.adminOrderList {
+  border: initial;
+}
+
+.adminOrderList > li {
+  border-bottom: initial;
+  padding: initial;
+}
+
+.adminOrderCard {
+  margin-bottom: 4rem;
+  border: 2px solid;
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.adminOrderCard ul {
+  list-style: none;
+  padding: 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* ORDERS ViEWED BY SUPPLIER */
+
+.supplierOrderCard {
+  display: flex;
+  flex-flow: column;
+}
+
+.adminOrderCard button {
+  margin: 0.5rem 0;
+}
+
+/* MANAGE USERS */
+.addUserForm {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 3.5rem;
+}
+
+.addUserForm > div {
+  margin-bottom: 1.5rem;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* THE REST */
+
+.qrcode {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+a {
+  font-size: larger;
+  text-decoration: none;
+  color: #28a745;
+}
+
+main {
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-flow: column;
+  max-width: 600px;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid #e5e5e5;
+  box-shadow:
+    0 0.25rem 1.125rem 0.1875rem #0000000f,
+    0 0.625rem 0.875rem 0.0625rem #00000014,
+    0 0.375rem 0.375rem -0.1875rem #00000024;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+ul > li {
+  padding: 12px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+ul > li:last-child {
+  border-bottom: none;
+}
+
+input {
+  cursor: text;
+}
+
+button,
+select {
+  cursor: pointer;
+}
