@@ -67,7 +67,7 @@ MongoDB stores:
 
 - firstName
 - lastName
-- role (admin or user)
+- role ( admin or user )
 - password
 - email
 - phone

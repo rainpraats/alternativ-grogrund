@@ -1,6 +1,6 @@
 .env*
 !.env.*.example
-.notes.md
+*.notes.md
 
 # Logs
 logs
