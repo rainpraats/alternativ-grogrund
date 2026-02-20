@@ -6,18 +6,20 @@ const Navigation = () => {
   const role = signedInUser.role;
 
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/account">Account</Link>
-        </li>
-        {(role === 'admin') && (
+    <main>
+      <nav>
+        <ul>
           <li>
-            <Link to="/manage-users">Manage Users</Link>
+            <Link to='/account'>Account</Link>
           </li>
-        )}
-      </ul>
-    </nav>
+          {role === 'admin' && (
+            <li>
+              <Link to='/manage-users'>Manage Users</Link>
+            </li>
+          )}
+        </ul>
+      </nav>
+    </main>
   );
 };
 

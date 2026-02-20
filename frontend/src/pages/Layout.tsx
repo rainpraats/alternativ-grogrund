@@ -1,9 +1,9 @@
-import { Outlet } from "react-router";
-import Banner from "../components/Banner";
-import Login from "../pages/Login.tsx";
-import { useState, useEffect } from "react";
-import { AuthService } from "../services/authService.ts";
-import type { User } from "../interfaces/User.ts";
+import { Outlet } from 'react-router';
+import Banner from '../components/Banner';
+import { useState, useEffect } from 'react';
+import { AuthService } from '../services/authService.ts';
+import type { User } from '../interfaces/User.ts';
+import Home from './Home.tsx';
 
 const Layout = () => {
   const [signedInUser, setSignedInUser] = useState<User | undefined>(undefined);
@@ -27,14 +27,19 @@ const Layout = () => {
   if (isLoading) {
     return (
       <>
-        <img src="./assets/corn.svg" alt="" />
+        <img src='./assets/corn.svg' alt='' />
         <p>Loading</p>
       </>
     );
   }
 
   if (!signedInUser) {
-    return <Login />;
+    return (
+      <>
+        <Banner />
+        <Outlet />
+      </>
+    );
   }
 
   return (
