@@ -9,7 +9,7 @@ const Home = () => {
         strategier för att skapa en mer rättvis, hållbar och välmående värld.
       </h2>
       <blockquote>
-        Vi säger inte: gör såhär. Vi säger såhär kan man göra.
+        "Vi säger inte: gör såhär. Vi säger: såhär kan man också göra."
       </blockquote>
       <div>
         <div>
