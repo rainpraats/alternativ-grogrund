@@ -20,8 +20,12 @@ const Account = () => {
   };
   return (
     <main>
-      <Link to="/">&#10094; go back</Link>
-      <p>Name: {signedInUser.firstName} {signedInUser.lastName}</p>
+      <span>
+        <Link to='/'>&lt; Tillbaka</Link>
+      </span>
+      <p>
+        Name: {signedInUser.firstName} {signedInUser.lastName}
+      </p>
       <p>Member since: {formatedDate.toString()}</p>
       <button
         onClick={() => {

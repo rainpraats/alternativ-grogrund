@@ -10,79 +10,6 @@ body {
   width: 100%;
 }
 
-/* BANNER */
-
-header {
-  align-items: center;
-  background-color: #28a745;
-  display: grid;
-  grid-template-columns: 9fr auto auto;
-  padding: 0 1rem;
-  height: 64px;
-}
-
-.displayUsername {
-  padding: 6px 16px;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 0 1rem;
-  background-color: white;
-}
-
-.displayUsername span {
-  color: #000;
-  font-weight: 700;
-}
-
-.bannerLoginButton {
-  height: 40px;
-  margin-right: 0.5rem;
-  background-color: #0f172a;
-  color: white;
-  border: 1px solid #000;
-  border-radius: 4px;
-  padding: 6px 12px;
-  transition: all 0.2s ease;
-  width: auto;
-}
-
-.bannerLoginButton:hover {
-  background-color: #1e293b;
-}
-
-.bannerBecomeMemberButton {
-  height: 40px;
-  background-color: #f8fafc;
-  color: black;
-  border: 1px solid #000;
-  border-radius: 4px;
-  padding: 6px 12px;
-  transition: all 0.2s ease;
-  width: auto;
-}
-
-.bannerBecomeMemberButton:hover {
-  background-color: #f1f5f9;
-}
-
-.logoutButton {
-  height: 40px;
-  margin-right: 0.5rem;
-  background-color: #34d058;
-  color: white;
-  border: 1px solid #000;
-  border-radius: 4px;
-  padding: 6px 12px;
-  transition: all 0.2s ease;
-  width: auto;
-}
-
-.logoutButton:hover {
-  background-color: white;
-}
-
 /* HOME */
 
 .home {
@@ -92,7 +19,6 @@ header {
   justify-content: center;
   margin: 0 auto;
   max-width: initial;
-  height: 100vh;
 }
 
 h2 {
@@ -159,74 +85,6 @@ ul {
   margin: 0;
 }
 
-/* NAV */
-nav {
-  width: fit-content;
-  margin: 0 auto;
-}
-
-nav > ul > li {
-  margin: 2rem;
-}
-
-nav > ul > li > a {
-  font-weight: bold;
-}
-
-/* ORDERS */
-
-.itemForm,
-.orderForm {
-  display: flex;
-  flex-flow: column;
-  gap: 0.2rem;
-  margin-bottom: 0.2rem;
-}
-
-.item {
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  padding: 1rem 0;
-}
-
-.adminOrderList {
-  border: initial;
-}
-
-.adminOrderList > li {
-  border-bottom: initial;
-  padding: initial;
-}
-
-.adminOrderCard {
-  margin-bottom: 4rem;
-  border: 2px solid;
-  border-radius: 8px;
-  padding: 2rem;
-  display: flex;
-  flex-flow: column;
-}
-
-.adminOrderCard ul {
-  list-style: none;
-  padding: 0;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-/* ORDERS ViEWED BY SUPPLIER */
-
-.supplierOrderCard {
-  display: flex;
-  flex-flow: column;
-}
-
-.adminOrderCard button {
-  margin: 0.5rem 0;
-}
-
 /* MANAGE USERS */
 .addUserForm {
   display: flex;
@@ -258,19 +116,19 @@ button {
 
 a {
   font-size: larger;
-  text-decoration: none;
   color: #28a745;
   transition: color 0.2s ease;
 }
 
 a:hover {
   color: #1e7e34;
+  text-decoration-thickness: 3px;
 }
 
 main {
   background-color: #f8fafc;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem 1rem 1rem 1rem;
   display: flex;
   flex-flow: column;
   max-width: 600px;
