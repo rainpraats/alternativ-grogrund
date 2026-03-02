@@ -20,7 +20,9 @@ const Account = () => {
   };
   return (
     <main>
-      <Link to='/'>&lt; Tillbaka</Link>
+      <span>
+        <Link to='/'>&lt; Tillbaka</Link>
+      </span>
       <p>
         Name: {signedInUser.firstName} {signedInUser.lastName}
       </p>
