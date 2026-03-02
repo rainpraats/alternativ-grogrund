@@ -1,9 +1,8 @@
 import { Outlet } from 'react-router';
-import Banner from '../components/Banner';
+import Header from '../components/Header.tsx';
 import { useState, useEffect } from 'react';
 import { AuthService } from '../services/authService.ts';
 import type { User } from '../interfaces/User.ts';
-import Home from './Home.tsx';
 
 const Layout = () => {
   const [signedInUser, setSignedInUser] = useState<User | undefined>(undefined);
@@ -33,18 +32,9 @@ const Layout = () => {
     );
   }
 
-  if (!signedInUser) {
-    return (
-      <>
-        <Banner />
-        <Outlet />
-      </>
-    );
-  }
-
   return (
     <>
-      <Banner signedInUser={signedInUser} />
+      <Header signedInUser={signedInUser} />
       <Outlet context={{ signedInUser }} />
     </>
   );

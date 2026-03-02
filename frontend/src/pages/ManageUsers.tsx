@@ -27,7 +27,7 @@ const ManageUsers = () => {
 
   return (
     <main>
-      <Link to="/">&#10094; go back</Link>
+      <Link to='/'>&lt; Tillbaka</Link>
       <AddUser fetchUsers={fetchUsers} />
       {status && <p>{status}</p>}
       <ul>

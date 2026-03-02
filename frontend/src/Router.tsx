@@ -12,8 +12,8 @@ export const router = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: '/', element: <Home /> },
-      { path: '/account', element: <Account /> },
-      { path: '/manage-users', element: <ManageUsers /> },
+      { path: '/profil', element: <Account /> },
+      { path: '/medlemmar', element: <ManageUsers /> },
     ],
   },
   {
@@ -21,7 +21,7 @@ export const router = createBrowserRouter([
     element: <Login />,
   },
   // {
-  //   path: '/signup',
+  //   path: '/bli-medlem',
   //   element: <Signup />,
   // },
   { path: '/*', element: <PageNotFound /> },
