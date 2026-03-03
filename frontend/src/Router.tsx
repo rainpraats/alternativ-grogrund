@@ -5,6 +5,7 @@ import Account from './pages/Account';
 import ManageUsers from './pages/ManageUsers';
 import PageNotFound from './pages/PageNotFound';
 import Login from './pages/Login';
+import EmailMembers from './pages/EmailMembers';
 
 export const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ export const router = createBrowserRouter([
       { path: '/', element: <Home /> },
       { path: '/profil', element: <Account /> },
       { path: '/medlemmar', element: <ManageUsers /> },
+      { path: '/maila', element: <EmailMembers /> },
     ],
   },
   {

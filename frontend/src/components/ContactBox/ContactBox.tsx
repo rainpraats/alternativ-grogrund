@@ -19,6 +19,7 @@ const ContactBox = () => {
     const { name, emailAddress, message } = formData;
     try {
       await new EmailService().contactRequest({ name, emailAddress, message });
+      setFormData({ ...formData, name: '', emailAddress: '', message: '' });
     } catch (error) {
       setErrorMessage(
         'Kunde inte skicka meddelande. Vänligen försök igen senare.',

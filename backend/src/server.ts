@@ -10,10 +10,13 @@ import router from './router';
 import { logger } from './middleware/logger.js';
 import { connectDb } from './database/db.js';
 import { NODE_ENV, PORT } from './validateENV.js';
+import { startEmailScheduler } from './utilities/emailScheduler.js';
 
 const startServer = async () => {
   try {
     await connectDb();
+
+    startEmailScheduler();
 
     const app = express();
 
